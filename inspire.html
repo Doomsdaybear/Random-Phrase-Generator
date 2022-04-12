@@ -1,15 +1,18 @@
 <!DOCTYPE html>
  <html>
+ <head>
+  <title>Word Gen</title>
+  </head>
   <body>
    <div style = "text-align:center">
    <button style = "button" onclick = "randwords()">Click me for a pair of random words!</button>
    </div>
    <script>
     function randwords(){
-    var choose1 = Math.floor(Math.random()*10);
-    var choose2 = Math.floor(Math.random()*10);
+    var choose1 = Math.floor(Math.random()*16);
+    var choose2 = Math.floor(Math.random()*16);
      if(choose1 == 0){
-     var Adjective = "Inflated"
+     var Adjective = "Inflated "
      }
      
      if(choose1 == 1){
@@ -54,6 +57,15 @@
      if(choose1 == 10){
      var Adjective = "Sexy "
      }
+     if(choose1 == 11){
+     var Adjective = "Abusive "
+     }
+     if(choose1 == 12){
+     var Adjetive = "Russian "
+     }
+     if(choose1 == 13){
+     var Adjective = "Ukranian "
+     }
      if(choose2 == 5){
      var Thing = "Karen"
      }
@@ -72,6 +84,16 @@
      if(choose2 == 10){
      var Thing = "Virus"
      }
+     if(choose2 == 11){
+     var Thing = "Police Officer"
+     }
+     if(choose2 == 12){
+     var Thing = "Knuckles"
+     }
+     if(choose2 == 13){
+     var Thing = "Furry"
+     }
+     
      alert(Adjective + Thing);
     }
    </script>
